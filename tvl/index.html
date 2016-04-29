@@ -19,6 +19,7 @@
             <div class="container">
                 <div class="topheadleft">
                     [HeaderLeftImage]
+                    <!--<a href="blog-logo.html"><img src="images/logo-blog.png" width="141" height="29"></a>-->
                     <a href="/" title="(%HomeTitle%)"><img src="{header_left_logo_path}" alt="(%HomeTitle%)" width="141" height="29"></a>
                     [/HeaderLeftImage]
                 </div>
@@ -56,15 +57,22 @@
                     [/NewUserLogin]
                     <!--user menu end here-->
                     <div class="shop_cart">
-                        <li><a href="#" id="cart"><img src="images/cart.png" width="29" height="20"> 0 items <span class="badge">- $0.00</span></a></li>
+                        <li>
+                            <!--<a href="#" id="cart"><img src="images/cart.png" width="29" height="20"> 0 items <span class="badge">- $0.00</span></a>-->
+                        (%ShoppingCart%)
+                            <a href="/index.php?do=catalog/order"><img src="images/cart.png" width="29" height="20"> 0 items <span class="badge">- $0.00</span>Sepete Git</a>
+                        </li>
                     </div>
                     <!--end shopping-cart-header -->
                     <!--cart main end here-->
                     <div class="search-bar">
-                        <form id="search" action="#" method="post">
+                        <form name="QuickSearchFrom" action="/index.php?do=catalog/exec&ref=search" method="POST">
                             <div id="input">
-                                <input type="text" name="search-terms" id="search-terms" placeholder="Enter search terms...">
-                                <input name="" type="button" id="search-label">
+                                <input type="hidden" name="QuickSearch" value="1">
+								<input type="text" class="searchInputClass QuickSearchBar" name="label" onblur="if(this.value.length==0){this.value='Site içi ürün arama...'}" onfocus="if(this.value=='Site içi ürün arama...'){this.value=''}" value="Site içi ürün arama..." />
+								<input type="submit" name="Submit" class="searchButton" value="" />
+                                <!--<input type="text" name="search-terms" id="search-terms" placeholder="Enter search terms...">
+                                <input name="" type="button" id="search-label">-->
                             </div>
                         </form>
                     </div>
@@ -79,9 +87,11 @@
                 <!--logo end here-->
                 <div class="menu-wrapper" role="navigation">
                     <ul class="nav" role="menubar">
+                        	(%LeftBlocks%)
                         <li role="menuitem"><span class="icon1"></span><a href="#">bal</a></li>
                         <li role="menuitem">
                             <span class="icon2"></span><a href="#"> Süt Ürünleri</a>
+                            (%Content%)
                             <div class="mega-menu" aria-hidden="true" role="menu">
                                 <div class="nav-column">
                                     <h3>Heading 1</h3>
@@ -135,6 +145,7 @@
                         <li role="menuitem"><span class="icon5"></span><a href="#">Unlu Mamüller</a>
                         <li role="menuitem">
                             <span class="icon6"></span><a href="#">Diğer</a>
+                            (%Content%)
                             <div class="mega-menu" aria-hidden="true" role="menu">
                                 <div class="nav-column">
                                     <h3>Heading 1</h3>
