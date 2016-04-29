@@ -19,10 +19,11 @@
             <div class="container">
                 <div class="topheadleft">
                     [HeaderLeftImage]
-                    <a href="blog-logo.html"><img src="images/logo-blog.png" width="141" height="29"></a>
+                    <!--<a href="blog-logo.html"><img src="images/logo-blog.png" width="141" height="29"></a>-->
+                    <a href="/" title="(%HomeTitle%)"><img src="{header_left_logo_path}" alt="(%HomeTitle%)" width="141" height="29"></a>
                     [/HeaderLeftImage]
                 </div>
-                <!--top header left-->
+                <!--top header left -->
                 <div class="topheadright">
                     [NewUserLogin]
                     [NotLoggedIn]
@@ -41,6 +42,19 @@
                     </ul>
                     [/NotLoggedIn]
                     [LoggedIn]
+                    <ul class="topusermenu">
+                        <li class="userMenuSignup">
+                            <span>(%MemberName%)</span>
+                        </li>
+                        <li class="userMenuLogin">
+                            <a href="/index.php?do=member/index">Hesabım</a>
+                        </li>
+                        <li class="userMenuFacebook">
+                            <a href="/index.php?do=member/logout">Çıkış</a>
+                        </li>
+                    </ul>
+                    [/LoggedIn]
+                    [/NewUserLogin]
                     <!--user menu end here-->
                     <div class="shop_cart">
                         <li>
