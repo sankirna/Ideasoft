@@ -13,7 +13,7 @@
 </head>
 <body>
     <div id="scrollTop"></div>
-    <div id="PageOver" ></div>
+    <div id="PageOver"></div>
     <div class="header">
         <div class="top-header">
             <div class="container">
@@ -477,38 +477,7 @@
     <div class="footer">
         <div class="footer-top">
             <div class="container">
-                <div class="footer-col">
-                    <h2>En Populer Olanlar</h2>
-                    <ul>
-                        <li><a href="#" title="Ev Yapımı Erişte - 450 Gr">Ev Yapımı Erişte - 450 Gr</a></li>
-                        <li><a href="#" title="uşburnu - 250gr">uşburnu - 250gr </a></li>
-                        <li><a href="#" title="Petek Bal - 1Kg ">Petek Bal - 1Kg </a></li>
-                        <li><a href="#" title="Tulum Peyniri - 1 Kg">Tulum Peyniri - 1 Kg</a></li>
-                        <li><a href="#" title="Kuru Dut - 250Gr">Kuru Dut - 250Gr</a></li>
-                        <li><a href="#" title=" Doğal Köy Bulguru - 1 Kg"> Doğal Köy Bulguru - 1 Kg</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h2>Sayfalar</h2>
-                    <ul>
-                        <li><a href="#" title="EMesafeli Satış Sözleşmesi">EMesafeli Satış Sözleşmesi</a></li>
-                        <li><a href="#" title="Gizlilik ve Güvenlik">Gizlilik ve Güvenlik</a></li>
-                        <li><a href="#" title="İptal ve İade Şartları">İptal ve İade Şartları</a></li>
-                        <li><a href="#" title="Ön Bilgilendirme">Ön Bilgilendirme</a></li>
-                        <li><a href="#" title="Havale/EFT Bildirim Formu">Havale/EFT Bildirim Formu</a></li>
-                        <li><a href="#" title="İade Formu">İade Formu</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h2>Yeni Ürünler</h2>
-                    <ul>
-                        <li><a href="#" title="Ev Yapımı Erişte - 450 Gr">Ev Yapımı Erişte - 450 Gr </a></li>
-                        <li><a href="#" title="Kuşburnu - 250gr ">Kuşburnu - 250gr </a></li>
-                        <li><a href="#" title="Doğal Kaynak Tuzu - 500 Gr">Doğal Kaynak Tuzu - 500 Gr</a></li>
-                        <li><a href="#" title="Doğal Kaynak Tuzu - 1 Kg">Doğal Kaynak Tuzu - 1 Kg</a></li>
-                        <li><a href="#" title="Doğal Kaynak Tuzu - 1 Kg">Doğal Kaynak Tuzu - 1 Kg</a></li>
-                    </ul>
-                </div>
+                (%Footer%)
                 <div class="footer-col last">
                     <div class="adress">
                         <span class="address-col">Telefonla Sipariş ve Sorularınız İçin</span>
@@ -516,10 +485,19 @@
                         <span class="email"><a href="#">info@demolinkhere.com</a></span>
                     </div>
                     <div class="newslatter">
-                        <form action="http://www.sansamobile.com/tvl/newslatter" method="get">
+                        <script type="text/javascript">
+                            var o_fields_New = {
+                                'm_yourname': { 'l': 'Adınız', 'r': 'true', 'mn': '3', 'mx': '40' },
+                                'm_email': { 'l': 'Emailiniz', 'r': 'true', 'f': 'email', 'mn': '5', 'mx': '60' }
+                            }
+                            var o_config_New = { 'to_disable': ['submit'], 'alert': 1 }
+                            var mf_New = new validator('MaillistForm_New', o_fields_New, o_config_New);
+                        </script>
+                        <form id="MaillistForm_New" action="#" onsubmit="return false;" method="post">
                             <div class="row-group">
-                                <input name="" type="text" placeholder="e-mail listemize kaydolun">
-                                <input name="" type="button" value="Kaydet">
+                                <input type='hidden' name="m_yourname" id="m_yourname" value="Ziyaretci"> <!-- Value degeri, "Isim" olarak kaydedilir -->
+                                <input class="announcementsInput" type="text" id="m_email" name="m_email" onblur="if (this.value.length == 0) {this.value = 'E-mailinizi yazınız'}" onfocus="if (this.value == 'E-mailinizi yazınız') {this.value = ''}" value="E-mailinizi yazınız" />
+                                <input type="submit" value="Kaydet" name="submit" class="announcementsButton announcementsResetButton" onclick="javascript:if (!mf_New.exec()) return false;alert(Add2Maillist($('MaillistForm_New').serialize(), 'type=r,method=post')); document.location.reload(true);" value="" />
                             </div>
                         </form>
                     </div>
@@ -549,7 +527,7 @@
             </div>
         </div>
     </div>
-  
+
     <script type="text/javascript">
         $(document).ready(function () {
             $(".tabs-menu a").click(function (event) {
@@ -573,5 +551,4 @@
 
 </body>
 
-<!-- Mirrored from www.sansamobile.com/tvl/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Apr 2016 19:47:38 GMT -->
 </html>
