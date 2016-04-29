@@ -1,0 +1,12 @@
+- Eklenen logonun büyüklüğü en fazla 325x140 olabilir.
+- Bir satırda en fazla 3 ürün gösterilebilir.
+- Vitrinlerde gösterilebilecek ürün resimlerinin boyutları en fazla 230x230px olabilir.
+- Slider alanı genişliği (width) en fazla 760px olabilir.
+- Aşağı açılır menü alanına en fazla 8 adet kategori eklenebilir.
+- Aşağı açılır menü'nün kolon sayısı toplam genişliği 200px olmalıdır.
+- Menü yönetimi 1. satır alanına ortalama en fazla 10 adet menü eklenebilir.
+- Menü yönetimi 2. satır alanı kullanılamaz.
+- Temanın kendi buton teması dışında farklı bir buton teması kullanılmamalıdır.
+- Sol bloklar kaldırılamaz.
+- Sağ başlık resmi kullanılamaz.
+- Blok genişliği 180px'dir.

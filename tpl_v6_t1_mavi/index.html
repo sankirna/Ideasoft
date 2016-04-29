@@ -1,0 +1,185 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>(%Title%)</title>
+<link href="theme.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=1080">
+<script type="text/javascript" src="__ThemeDir__/js/smart.drop.down.menu.js"></script>
+<script type="text/javascript" src="__ThemeDir__/js/smart.drop.down.menu.image.js"></script>
+</head>
+<body onLoad="ClosePageOver();">
+<div id="PageOver" style="z-index:998; visibility:hidden;"></div>
+	<div id="header">
+		<div class="headerTop">
+			<div class="wrapperHtmlElementCenter">
+				<div class="userMenu _clearfix _floatRight">
+					[NewUserLogin]
+					[NotLoggedIn]
+						<ul>
+							<li>
+								<a href="/index.php?do=member/login">Üye Girişi</a>
+							</li>
+							<li>
+								<a href="/index.php?do=member/signup">Yeni Üyelik</a>
+							</li>
+							[FbLogin]
+								<li>
+									<a href="javascript:fblogin();" class="facebookLogin">Facebook ile Bağlan!</a>
+								</li>
+							[/FbLogin]
+						</ul>
+					[/NotLoggedIn]
+					[LoggedIn]
+						<ul>
+							<li>
+								<span>(%MemberName%)</span>
+							</li>
+							<li>
+								<a href="/index.php?do=member/index">Hesabım</a>
+							</li>
+							<li>
+								<a href="/index.php?do=member/logout">Çıkış</a>
+							</li>
+						</ul>
+					[/LoggedIn]
+					[/NewUserLogin]
+				</div>
+			</div>
+		</div>
+		<div class="headerMiddle">
+			<div class="wrapperHtmlElementCenter _clearfix">
+				<div class="headerMiddleLeft _textAlignCenter _floatLeft">
+					<div class="verticalCenter">
+						<div class="logo">
+							[HeaderLeftImage]
+								<a href="/" title="(%HomeTitle%)"><img src="{header_left_logo_path}" alt="(%HomeTitle%)" /></a>
+							[/HeaderLeftImage]
+							[HeaderLeftSwf]
+								<object>
+									<param name="allowfullscreen" value="true" />
+									<param name="allowscriptaccess" value="always" />
+									<param name="wmode" value="transparent" />
+									<param name="movie" value="{header_left_logo_path}" />
+									<embed src="{header_left_logo_path}" type="application/x-shockwave-flash"
+										allowscriptaccess="always" wmode="transparent" allowfullscreen="true">
+									</embed>
+								</object>
+							[/HeaderLeftSwf]
+						</div>
+					</div>
+				</div>
+				<div class="headerMiddleRight _floatLeft">
+					<div class="headerMiddleRightTop"></div>
+					<div class="headerMiddleRightMiddle">
+						<div class="cartAmount _floatRight">
+							<a href="/index.php?do=catalog/order" class="cartAmountIcon"></a>
+							<div class="cartAmountButton">
+								<div class="_floatLeft">
+									(%ShoppingCart%) Ürün
+								</div>
+								<div class="_floatRight">
+									<a href="/index.php?do=catalog/order">Sepete Git</a>
+								</div>
+							</div>
+						</div>
+						<div class="search _floatRight">
+							<form name="QuickSearchFrom" action="/index.php?do=catalog/exec&ref=search" method="POST">
+								<input type="hidden" name="QuickSearch" value="1">
+								<input type="text" class="searchInputClass QuickSearchBar" name="label" onblur="if(this.value.length==0){this.value='Site içi ürün arama...'}" onfocus="if(this.value=='Site içi ürün arama...'){this.value=''}" value="Site içi ürün arama..." />
+								<input type="submit" name="Submit" class="searchButton" value="" />
+							</form>
+						</div>
+					</div>
+					<div class="headerMiddleRightBottom _clearfix">
+						<div class="defaultMenu _floatRight">
+							<ul>
+								<li>
+									<a href="/">Anasayfa</a>
+								</li>
+								<li>
+									<a href="/index.php?do=catalog/newProducts">Yeniler</a>
+								</li>
+								<li>
+									<a href="/index.php?do=catalog/rebateProducts">İndirimdekiler</a>
+								</li>
+								<li>
+									<a href="/index.php?do=catalog/featuredProducts">Sponsor Ürünler</a>
+								</li>
+								<li>
+									<a href="/index.php?do=static/contactus">İletişim</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="headerBottom">
+			<div class="wrapperHtmlElementCenter">
+				<div class="_clearfix">
+					<div class="navigation _floatLeft">
+						<a class="homeLink" href="/"></a>
+						{%SmartDropDownMenu%}
+					</div>
+					<div class="navigationRightSpace _floatRight"></div>
+					<div class="_clear"></div>
+					<div class="menuItemTemplate _clearfix _floatRight">
+						[MIT1]
+							[Row1]<a href="(%ItemLink%)" target="(%ItemTarget%)">(%ItemLabel%)</a>[/Row1]
+						[/MIT1]
+						{MIT1}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="mainContainer" class="_autoMargin">
+		<table class="wpe100 _borderNone" cellspacing="0" cellpadding="0">
+			<tr>
+				<td valign="top">
+					<div class="leftBox">
+						(%LeftBlocks%)
+					</div>
+				</td>
+				<td valign="top">
+					<div class="subContent">
+						(%Content%)
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="s20"></div>
+	<div id="footer">
+		<div class="footerTop">
+			<div class="wrapperHtmlElementCenter">
+				<div class="announcements _floatRight">
+					<script type="text/javascript">
+						var o_fields_New = {
+							'm_yourname' 	: 	{'l':'Adınız','r':'true','mn':'3','mx':'40'},
+							'm_email'		:	{'l':'Emailiniz','r':'true','f':'email','mn':'5','mx':'60'}
+						}
+						var o_config_New = {'to_disable' : ['submit'],'alert' : 1}
+						var mf_New = new validator('MaillistForm_New', o_fields_New, o_config_New);
+					</script>
+					<form id="MaillistForm_New" action="#" onsubmit="return false;" method="post">
+						<input type='hidden' name="m_yourname" id="m_yourname" value="Ziyaretci"> <!-- Value degeri, "Isim" olarak kaydedilir -->
+						<input class="announcementsInput" type="text" id="m_email" name="m_email" onblur="if(this.value.length==0){this.value='E-mailinizi yazınız'}" onfocus="if(this.value=='E-mailinizi yazınız'){this.value=''}" value="E-mailinizi yazınız" />
+						<input type="submit" name="submit" class="announcementsButton announcementsResetButton" onclick="javascript:if(!mf_New.exec()) return false;alert (Add2Maillist($('MaillistForm_New').serialize(),'type=r,method=post')); document.location.reload(true);" value="" /> 
+					</form>
+				</div>
+				<div class="_clear"></div>
+			</div>
+		</div>
+		<div class="footerMiddle">
+			<div class="wrapperHtmlElementCenter">
+				(%Footer%)
+			</div>
+		</div>
+		<div class="footerBottom">
+			<div class="wrapperHtmlElementCenter"></div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<div class="showcase">
+	[yeni_buton]<div class="newBadge _positionAbsolute"></div>[/yeni_buton]
+	[hediyeli_buton]<div class="giftBadge _positionAbsolute"></div>[/hediyeli_buton]
+	[indirimli_buton]<div class="rebateBadge _positionAbsolute">%{indirim_yuzdesi}</div>[/indirimli_buton]
+	[tukendi]<a href="{urun_link}" class="showcaseNoStock _positionAbsolute"></a>[/tukendi]
+	<a href="{urun_link}" class="showcaseView _positionAbsolute"></a>
+	<div class="showcaseImage">
+		<div class="showcaseImageVertical">
+			<div class="showcaseImageHorizontal">
+				<div class="showcaseImageContent">
+					{resim}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="showcaseItem">
+		<div class="showcaseBrand">
+			<a href="{marka_link}" title="{marka_adi}" class="showcaseLink">{marka_adi}</a>
+		</div>
+		<div class="showcaseTitle">
+			<a href="{urun_link}" title="{urunadi}" class="showcaseLink">{urunadi}</a>
+		</div>
+		<div class="showcasePrice _clearfix">
+			[indirimli_buton]
+				<div class="_floatLeft _textDecorationThrough">
+					{kdv_dahil_fiyat} {sistem_kur}
+				</div>
+			[/indirimli_buton]
+			<div class="_floatRight">
+				{kdv_dahil_son_fiyat} {sistem_kur}
+			</div>
+		</div>
+	</div>
+</div>

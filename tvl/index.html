@@ -1,0 +1,562 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+          "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="tr">
+
+<!-- Mirrored from www.sansamobile.com/tvl/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Apr 2016 19:47:00 GMT -->
+<head>
+    <title>Title</title>
+    <link href="theme.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=990">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+</head>
+<body>
+    <div id="scrollTop"></div>
+    <div id="PageOver" ></div>
+    <div class="header">
+        <div class="top-header">
+            <div class="container">
+                <div class="topheadleft">
+                    <a href="blog-logo.html"><img src="images/logo-blog.png" width="141" height="29"></a>
+                </div>
+                <!--top header left-->
+                <div class="topheadright">
+                    [NewUserLogin]
+                    [NotLoggedIn]
+                    <ul class="topusermenu">
+                        <li class="userMenuSignup">
+                            <a href="/index.php?do=member/login">Üye Girişi</a>
+                        </li>
+                        <li class="userMenuLogin">
+                            <a href="/index.php?do=member/signup">Yeni Üyelik</a>
+                        </li>
+                        [FbLogin]
+                        <li class="userMenuFacebook">
+                            <a href="javascript:fblogin();" class="facebookLogin">Facebook ile Bağlan!</a>
+                        </li>
+                        [/FbLogin]
+                    </ul>
+                    [/NotLoggedIn]
+                    [LoggedIn]
+                    <!--user menu end here-->
+                    <div class="shop_cart">
+                        <li><a href="#" id="cart"><img src="images/cart.png" width="29" height="20"> 0 items <span class="badge">- $0.00</span></a></li>
+                    </div>
+                    <!--end shopping-cart-header -->
+                    <!--cart main end here-->
+                    <div class="search-bar">
+                        <form id="search" action="#" method="post">
+                            <div id="input">
+                                <input type="text" name="search-terms" id="search-terms" placeholder="Enter search terms...">
+                                <input name="" type="button" id="search-label">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--top head right-->
+            </div>
+        </div>
+        <!--top header bar-->
+        <div class="header-menu">
+            <div class="container">
+                <div class="logo"><a href="#"><img src="images/logo.png" width="146" height="74" alt="logo"></a></div>
+                <!--logo end here-->
+                <div class="menu-wrapper" role="navigation">
+                    <ul class="nav" role="menubar">
+                        <li role="menuitem"><span class="icon1"></span><a href="#">bal</a></li>
+                        <li role="menuitem">
+                            <span class="icon2"></span><a href="#"> Süt Ürünleri</a>
+                            <div class="mega-menu" aria-hidden="true" role="menu">
+                                <div class="nav-column">
+                                    <h3>Heading 1</h3>
+                                    <ul>
+                                        <li role="menuitem"><a href="#">Item 1</a></li>
+                                        <li role="menuitem"><a href="#">Item 2</a></li>
+                                        <li role="menuitem"><a href="#">Item 3</a></li>
+                                        <li role="menuitem"><a href="#">Item 4</a></li>
+                                        <li role="menuitem"><a href="#">Item 5</a></li>
+                                        <li role="menuitem"><a href="#">Item 6</a></li>
+                                        <li role="menuitem"><a href="#">Item 7</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-column">
+                                    <h3>Heading 2</h3>
+                                    <ul>
+                                        <li role="menuitem"><a href="#">Item 1</a></li>
+                                        <li role="menuitem"><a href="#">Item 2</a></li>
+                                        <li role="menuitem"><a href="#">Item 3</a></li>
+                                    </ul>
+                                    <h3>Heading 3</h3>
+                                    <ul>
+                                        <li role="menuitem"><a href="#">Item 1</a></li>
+                                        <li role="menuitem"><a href="#">Item 2</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-column">
+                                    <h3>Heading 4</h3>
+                                    <ul>
+                                        <li role="menuitem"><a href="#">Item 1</a></li>
+                                        <li role="menuitem"><a href="#">Item 2</a></li>
+                                        <li role="menuitem"><a href="#">Item 3</a></li>
+                                        <li role="menuitem"><a href="#">Item 4</a></li>
+                                        <li role="menuitem"><a href="#">Item 5</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-column">
+                                    <h3>Heading 4</h3>
+                                    <ul>
+                                        <li role="menuitem"><a href="#">Item 1</a></li>
+                                        <li role="menuitem"><a href="#">Item 2</a></li>
+                                        <li role="menuitem"><a href="#">Item 3</a></li>
+                                        <li role="menuitem"><a href="#">Item 4</a></li>
+                                        <li role="menuitem"><a href="#">Item 5</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li role="menuitem"><span class="icon3"></span><a href="#">Tahıl Ürünleri</a></li>
+                        <li role="menuitem"><span class="icon4"></span><a href="#"> Kuru Meyveler</a></li>
+                        <li role="menuitem"><span class="icon5"></span><a href="#">Unlu Mamüller</a>
+                        <li role="menuitem">
+                            <span class="icon6"></span><a href="#">Diğer</a>
+                            <div class="mega-menu" aria-hidden="true" role="menu">
+                                <div class="nav-column">
+                                    <h3>Heading 1</h3>
+                                    <ul>
+                                        <li role="menuitem"><a href="#">Item 1</a></li>
+                                        <li role="menuitem"><a href="#">Item 2</a></li>
+                                        <li role="menuitem"><a href="#">Item 3</a></li>
+                                        <li role="menuitem"><a href="#">Item 4</a></li>
+                                        <li role="menuitem"><a href="#">Item 5</a></li>
+                                        <li role="menuitem"><a href="#">Item 6</a></li>
+                                        <li role="menuitem"><a href="#">Item 7</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-column">
+                                    <h3>Heading 2</h3>
+                                    <ul>
+                                        <li role="menuitem"><a href="#">Item 1</a></li>
+                                        <li role="menuitem"><a href="#">Item 2</a></li>
+                                        <li role="menuitem"><a href="#">Item 3</a></li>
+                                    </ul>
+                                    <h3>Heading 3</h3>
+                                    <ul>
+                                        <li role="menuitem"><a href="#">Item 1</a></li>
+                                        <li role="menuitem"><a href="#">Item 2</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-column">
+                                    <h3>Heading 4</h3>
+                                    <ul>
+                                        <li role="menuitem"><a href="#">Item 1</a></li>
+                                        <li role="menuitem"><a href="#">Item 2</a></li>
+                                        <li role="menuitem"><a href="#">Item 3</a></li>
+                                        <li role="menuitem"><a href="#">Item 4</a></li>
+                                        <li role="menuitem"><a href="#">Item 5</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-column">
+                                    <h3 class="orange">Highlighted Heading</h3>
+                                    <ul>
+                                        <li role="menuitem"><a href="#">Item 1</a></li>
+                                        <li role="menuitem"><a href="#">Item 2</a></li>
+                                    </ul>
+                                    <h3 class="orange">Highlighted Heading</h3>
+                                    <ul>
+                                        <li role="menuitem"><a href="#">Item 1</a></li>
+                                        <li role="menuitem"><a href="#">Item 2</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- menu end here-->
+        </div>
+        <!--header menu part end here-->
+    </div>
+    <!--main header end here-->
+    <div class="slider"></div>
+    <!--    slider end here-->
+    <div class="middel">
+        <div class="main-product-col">
+            <div class="container">
+                <div id="tabs-container">
+                    <ul class="tabs-menu">
+                        <li class="current"><a href="#tab-1">POPÜLER ÜRÜNLER</a></li>
+                        <li><a href="#tab-2">EN YENİLER</a></li>
+                        <li><a href="#tab-3">İNDİRİMDEKİLER</a></li>
+                    </ul>
+                    <div class="tab">
+                        <div id="tab-1" class="tab-content">
+                            <div class="showcase">
+                                <div class="discount">indirim 10%</div>
+                                <div class="showcasePicture"><img src="images/showcase.png" alt="showcase"></div>
+                                <div class="showcaseItem">
+                                    <div class="showcaseTitle">Kuşburnu - 250gr</div>
+                                </div>
+                                <div class="showcasePrice ">
+                                    <div class="showcasePriceOne">
+                                        5,40 TL Kdv Dahil
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="new">new</div>
+                                <div class="showcasePicture"><img src="images/showcase2.png" alt="showcase"></div>
+                                <div class="showcaseItem">
+                                    <div class="showcaseTitle">Kuşburnu - 250gr</div>
+                                </div>
+                                <div class="showcasePrice ">
+                                    <div class="showcasePriceOne">
+                                        5,40 TL Kdv Dahil
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcasePicture"><img src="images/showcase3.png" alt="showcase"></div>
+                                <div class="showcaseItem">
+                                    <div class="showcaseTitle">Kuşburnu - 250gr</div>
+                                </div>
+                                <div class="showcasePrice ">
+                                    <div class="showcasePriceOne">
+                                        5,40 TL Kdv Dahil
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcasePicture"><img src="images/showcase4.png" alt="showcase"></div>
+                                <div class="showcaseItem">
+                                    <div class="showcaseTitle">Kuşburnu - 250gr</div>
+                                </div>
+                                <div class="showcasePrice ">
+                                    <div class="showcasePriceOne">
+                                        5,40 TL Kdv Dahil
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcasePicture"><img src="images/showcase5.png" alt="showcase"></div>
+                                <div class="showcaseItem">
+                                    <div class="showcaseTitle">Kuşburnu - 250gr</div>
+                                </div>
+                                <div class="showcasePrice ">
+                                    <div class="showcasePriceOne">
+                                        5,40 TL Kdv Dahil
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="discount">indirim 10%</div>
+                                <div class="showcasePicture"><img src="images/showcase6.png" alt="showcase"></div>
+                                <div class="showcaseItem">
+                                    <div class="showcaseTitle">Kuşburnu - 250gr</div>
+                                </div>
+                                <div class="showcasePrice ">
+                                    <div class="showcasePriceOne">
+                                        5,40 TL Kdv Dahil
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcasePicture"><img src="images/showcase7.png" alt="showcase"></div>
+                                <div class="showcaseItem">
+                                    <div class="showcaseTitle">Kuşburnu - 250gr</div>
+                                </div>
+                                <div class="showcasePrice ">
+                                    <div class="showcasePriceOne">
+                                        5,40 TL Kdv Dahil
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcasePicture"><img src="images/showcase8.png" alt="showcase"></div>
+                                <div class="showcaseItem">
+                                    <div class="showcaseTitle">Kuşburnu - 250gr</div>
+                                </div>
+                                <div class="showcasePrice ">
+                                    <div class="showcasePriceOne">
+                                        5,40 TL Kdv Dahil
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-content">
+                            <div class="showcase">
+                                <div class="showcasePicture"><img src="images/showcase.png" alt="showcase"></div>
+                                <div class="showcaseItem">
+                                    <div class="showcaseTitle">Kuşburnu - 250gr</div>
+                                </div>
+                                <div class="showcasePrice ">
+                                    <div class="showcasePriceOne">
+                                        5,40 TL Kdv Dahil
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcasePicture"><img src="images/showcase.png" alt="showcase"></div>
+                                <div class="showcaseItem">
+                                    <div class="showcaseTitle">Kuşburnu - 250gr</div>
+                                </div>
+                                <div class="showcasePrice ">
+                                    <div class="showcasePriceOne">
+                                        5,40 TL Kdv Dahil
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcasePicture"><img src="images/showcase.png" alt="showcase"></div>
+                                <div class="showcaseItem">
+                                    <div class="showcaseTitle">Kuşburnu - 250gr</div>
+                                </div>
+                                <div class="showcasePrice ">
+                                    <div class="showcasePriceOne">
+                                        5,40 TL Kdv Dahil
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-content">
+                            <div class="showcase">
+                                <div class="showcasePicture"><img src="images/showcase.png" alt="showcase"></div>
+                                <div class="showcaseItem">
+                                    <div class="showcaseTitle">Kuşburnu - 250gr</div>
+                                </div>
+                                <div class="showcasePrice ">
+                                    <div class="showcasePriceOne">
+                                        5,40 TL Kdv Dahil
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcasePicture"><img src="images/showcase.png" alt="showcase"></div>
+                                <div class="showcaseItem">
+                                    <div class="showcaseTitle">Kuşburnu - 250gr</div>
+                                </div>
+                                <div class="showcasePrice ">
+                                    <div class="showcasePriceOne">
+                                        5,40 TL Kdv Dahil
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcasePicture"><img src="images/showcase.png" alt="showcase"></div>
+                                <div class="showcaseItem">
+                                    <div class="showcaseTitle">Kuşburnu - 250gr</div>
+                                </div>
+                                <div class="showcasePrice ">
+                                    <div class="showcasePriceOne">
+                                        5,40 TL Kdv Dahil
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcasePicture"><img src="images/showcase.png" alt="showcase"></div>
+                                <div class="showcaseItem">
+                                    <div class="showcaseTitle">Kuşburnu - 250gr</div>
+                                </div>
+                                <div class="showcasePrice ">
+                                    <div class="showcasePriceOne">
+                                        5,40 TL Kdv Dahil
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcasePicture"><img src="images/showcase.png" alt="showcase"></div>
+                                <div class="showcaseItem">
+                                    <div class="showcaseTitle">Kuşburnu - 250gr</div>
+                                </div>
+                                <div class="showcasePrice ">
+                                    <div class="showcasePriceOne">
+                                        5,40 TL Kdv Dahil
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="productads">
+            <div class="container">
+                <div class="productads-inner">
+                    <img src="images/banner.jpg" alt="banner">
+                    <div class="caption">Burada kukla metin</div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="fetured-product">
+            <div class="container">
+                <div class="fetured-product-control">
+                    <h2>VİTRİNDEKİLER<br>ürün</h2>
+                </div>
+                <div class="fetured-slider">
+                    <div class="showcase">
+                        <div class="showcasePicture"><img src="images/showcase.png" alt="showcase"></div>
+                        <div class="showcaseItem">
+                            <div class="showcaseTitle">Kuşburnu - 250gr</div>
+                        </div>
+                        <div class="showcasePrice ">
+                            <div class="showcasePriceOne">
+                                5,40 TL Kdv Dahil
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase">
+                        <div class="showcasePicture"><img src="images/showcase.png" alt="showcase"></div>
+                        <div class="showcaseItem">
+                            <div class="showcaseTitle">Kuşburnu - 250gr</div>
+                        </div>
+                        <div class="showcasePrice ">
+                            <div class="showcasePriceOne">
+                                5,40 TL Kdv Dahil
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase">
+                        <div class="showcasePicture"><img src="images/showcase.png" alt="showcase"></div>
+                        <div class="showcaseItem">
+                            <div class="showcaseTitle">Kuşburnu - 250gr</div>
+                        </div>
+                        <div class="showcasePrice ">
+                            <div class="showcasePriceOne">
+                                5,40 TL Kdv Dahil
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="testimonials-col">
+            <div class="container">
+                <h1>SİZDEN GELEN YORUMLAR</h1>
+                <div id="testimonials">
+                    <blockquote>
+                        <p>
+                            "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum bilinmeyen bir yazıcı tipi bir kadırga alıp bir tür örnek kitap yapmak için şifreli 1500'ler, beri endüstri standart kukla metin olmuştur. Bu temelde değişmeden kalan, yüzyıllar değil,"
+                            <cite>&ndash;Martin - NY</cite>
+                        </p>
+                    </blockquote>
+                    <blockquote>
+                        <p>
+                            "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum bilinmeyen bir yazıcı tipi bir kadırga alıp bir tür örnek kitap yapmak için şifreli 1500'ler, beri endüstri standart kukla metin olmuştur. Bu temelde değişmeden kalan, yüzyıllar değil,"
+                            <cite>&ndash;Sandra - LA</cite>
+                        </p>
+                    </blockquote>
+                    <blockquote>
+                        <p>
+                            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            <cite>&ndash;Jason - MA</cite>
+                        </p>
+                    </blockquote>
+                </div>
+                <!--end testimonials-->
+            </div>
+            <!--testimonials -->
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-col">
+                    <h2>En Populer Olanlar</h2>
+                    <ul>
+                        <li><a href="#" title="Ev Yapımı Erişte - 450 Gr">Ev Yapımı Erişte - 450 Gr</a></li>
+                        <li><a href="#" title="uşburnu - 250gr">uşburnu - 250gr </a></li>
+                        <li><a href="#" title="Petek Bal - 1Kg ">Petek Bal - 1Kg </a></li>
+                        <li><a href="#" title="Tulum Peyniri - 1 Kg">Tulum Peyniri - 1 Kg</a></li>
+                        <li><a href="#" title="Kuru Dut - 250Gr">Kuru Dut - 250Gr</a></li>
+                        <li><a href="#" title=" Doğal Köy Bulguru - 1 Kg"> Doğal Köy Bulguru - 1 Kg</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h2>Sayfalar</h2>
+                    <ul>
+                        <li><a href="#" title="EMesafeli Satış Sözleşmesi">EMesafeli Satış Sözleşmesi</a></li>
+                        <li><a href="#" title="Gizlilik ve Güvenlik">Gizlilik ve Güvenlik</a></li>
+                        <li><a href="#" title="İptal ve İade Şartları">İptal ve İade Şartları</a></li>
+                        <li><a href="#" title="Ön Bilgilendirme">Ön Bilgilendirme</a></li>
+                        <li><a href="#" title="Havale/EFT Bildirim Formu">Havale/EFT Bildirim Formu</a></li>
+                        <li><a href="#" title="İade Formu">İade Formu</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h2>Yeni Ürünler</h2>
+                    <ul>
+                        <li><a href="#" title="Ev Yapımı Erişte - 450 Gr">Ev Yapımı Erişte - 450 Gr </a></li>
+                        <li><a href="#" title="Kuşburnu - 250gr ">Kuşburnu - 250gr </a></li>
+                        <li><a href="#" title="Doğal Kaynak Tuzu - 500 Gr">Doğal Kaynak Tuzu - 500 Gr</a></li>
+                        <li><a href="#" title="Doğal Kaynak Tuzu - 1 Kg">Doğal Kaynak Tuzu - 1 Kg</a></li>
+                        <li><a href="#" title="Doğal Kaynak Tuzu - 1 Kg">Doğal Kaynak Tuzu - 1 Kg</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col last">
+                    <div class="adress">
+                        <span class="address-col">Telefonla Sipariş ve Sorularınız İçin</span>
+                        <span class="phone">0(123) 456-99-89</span>
+                        <span class="email"><a href="#">info@demolinkhere.com</a></span>
+                    </div>
+                    <div class="newslatter">
+                        <form action="http://www.sansamobile.com/tvl/newslatter" method="get">
+                            <div class="row-group">
+                                <input name="" type="text" placeholder="e-mail listemize kaydolun">
+                                <input name="" type="button" value="Kaydet">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li><a href="#" title="facebookr"><img src="images/facebook.png" width="40" height="40" alt="facebook"></a></li>
+                            <li><a href="#" title="google"><img src="images/google.png" width="40" height="40" alt="google"></a></li>
+                            <li><a href="#" title="instagram"><img src="images/instagram.png" width="40" height="40" alt="instrgram"></a></li>
+                            <li><a href="#" title="twitter"><img src="images/twitter.png" width="40" height="40" alt="twitter"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="payment-col-left">
+                    <ul>
+                        <li><a href="#"><img src="images/mastercard.png" width="29" height="25"></a></li>
+                        <li><a href="#"><img src="images/visacard.png" width="35" height="25"></a></li>
+                        <li><a href="#"><img src="images/cc-a.png" width="57" height="25"></a></li>
+                    </ul>
+                </div>
+                <div class="payment-col-right">
+                    <p><a href="#">Bu site, IdeaSoft® - Akıllı E-ticaret Paketleri ile hazırlanmıştır.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".tabs-menu a").click(function (event) {
+                event.preventDefault();
+                $(this).parent().addClass("current");
+                $(this).parent().siblings().removeClass("current");
+                var tab = $(this).attr("href");
+                $(".tab-content").not(tab).css("display", "none");
+                $(tab).fadeIn();
+            });
+        });
+        $(document).ready(function () {
+            $('#testimonials')
+         	.after('<div id="nav">')
+         	.cycle({
+         	    fx: 'fade', // choose your transition type, ex: fade, scrollUp, scrollRight, shuffle
+         	    pager: '#nav'
+         	});
+        });
+    </script>
+
+</body>
+
+<!-- Mirrored from www.sansamobile.com/tvl/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Apr 2016 19:47:38 GMT -->
+</html>

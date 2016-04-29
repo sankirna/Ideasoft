@@ -1,0 +1,23 @@
+<div class="dropMenu">
+<ul>
+	[FirstLevelCategory]
+	<li id="dropMenuCategory-{main_category_id}">
+		<a href="{main_category_link}">{main_category_label}</a>
+		<div class="dropMenuSubCategory _clearfix">
+			[SecondLevelCategory]
+			<div class="dropMenuColumns">
+				<a href="{category_link}" class="dropMenuColumnsTitle">{category_label}</a>
+				<ul class="thirdLevelCategories">
+					[ThirdLevelCategory]
+					<li>
+						<a href="{sub_category_link}">{sub_category_label}</a>
+					</li>
+					[/ThirdLevelCategory]
+				</ul>
+			</div>
+			[/SecondLevelCategory]
+		</div>	
+	</li>
+	[/FirstLevelCategory]
+</ul>
+</div>
